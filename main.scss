@@ -1,0 +1,269 @@
+        @import url(./fonts/font/stylesheet.css);
+        @import url(./fonts/UnderCaseType_Fraunces_1.000/FontsWeb/variable-subsets/fonts.css);
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: #F2F2F2;
+        }
+        
+        img {}
+        
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+        
+        .container {
+            width: 1320px;
+            padding: 0px 20px;
+            margin: 0 auto;
+        }
+        
+        $fontBarlow: Barlow;
+        $fontFraunces:Fraunces;
+        $linkColor:#83888F;
+        $titleWhity: #FEFCF7;
+        $titleBlack:#333D4B;
+        .header {
+            width: 100%;
+            .header_box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px 0;
+                .navbarbrand {
+                    display: flex;
+                }
+                .header__nav {
+                    .header__item {
+                        width: 300px;
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                        padding-left: 0;
+                    }
+                    .item__list {
+                        list-style: none;
+                        .list__link {
+                            text-decoration: none;
+                            font-family: $fontBarlow;
+                            color: $linkColor;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 15px;
+                            &:hover {
+                                color: #333D4B;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .main {
+            .hero {
+                &__box {
+                    background-image: url('../images/backgraund_img_one.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    padding-top: 137px;
+                    padding-left: 85px;
+                    padding-bottom: 137px;
+                    &_title {
+                        font-family: $fontFraunces;
+                        color: $titleWhity;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        margin-bottom: 24px;
+                    }
+                    &_text {
+                        max-width: 450px;
+                        font-family: $fontBarlow;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                    }
+                }
+            }
+            .our__box {
+                margin: 0 auto;
+                padding-top: 170px;
+                padding-bottom: 160px;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                .our__img {
+                    border-radius: 12px;
+                    margin-bottom: 80px;
+                }
+                .ourbox_info {
+                    padding-top: 90px;
+                    padding-left: 120px;
+                    .ourbox__title {
+                        font-family: $fontFraunces;
+                        color: $titleBlack;
+                        margin-bottom: 32px;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                    }
+                    .ourbox__text {
+                        font-family: $fontBarlow;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                        max-width: 540px;
+                    }
+                }
+            }
+        }
+        
+        .uncompromising {
+            width: 100%;
+            &__box {
+                width: 100%;
+                background-color: #2C343E;
+                border-radius: 12px;
+                padding-top: 100px;
+                padding-left: 85px;
+                padding-bottom: 140px;
+                position: relative;
+                &_img {
+                    width: 430px;
+                    height: 460px;
+                    border-radius: 12px;
+                    position: absolute;
+                    z-index: 1;
+                    right: 80px;
+                    top: -90px;
+                }
+                &_title {
+                    font-family: $fontFraunces;
+                    color: $titleWhity;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 48px;
+                    margin-bottom: 32px;
+                }
+                &_text {
+                    font-family: $fontBarlow;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #FEFCF7;
+                    max-width: 540px;
+                }
+            }
+        }
+        
+        .headquarter {
+            .headquarters__box {
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 150px;
+                padding-bottom: 170px;
+                &_title {
+                    font-family: $fontFraunces;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #83888F;
+                }
+                .country {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    &__box {
+                        padding-top: 70px;
+                        width: 30%;
+                        &_img {
+                            margin-bottom: 46px;
+                        }
+                        &_title {
+                            font-family: $fontFraunces;
+                            color: $titleBlack;
+                            margin-bottom: 24px;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 32px;
+                            line-height: 36px;
+                        }
+                        &_text {
+                            font-family: $fontBarlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #333D4B;
+                            max-width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: #2C343E;
+            .footer_box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 48px 0;
+                .footerbrand {
+                    display: flex;
+                }
+                .networks {
+                    display: flex;
+                    width: 100px;
+                    justify-content: space-between;
+                    &__logo:hover {
+                        background-color: #FDD6BA;
+                    }
+                }
+            }
+            .footer__nav {
+                .footer__item {
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    padding-left: 0;
+                }
+                .item__list {
+                    list-style: none;
+                    .list__link {
+                        text-decoration: none;
+                        font-family: $fontBarlow;
+                        color: $linkColor;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 15px;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
